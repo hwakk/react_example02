@@ -5,7 +5,6 @@ const InputField = (props: any) => {
     <>
       <div className="App">
         <input
-          style={{ borderColor: "red" }}
           type={props.type}
           value={props.value}
           placeholder={props.placeholder}

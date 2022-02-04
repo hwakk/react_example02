@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Movie from "./components/Movie";
 import MovieForm from "./components/MovieForm";
+import Navbar from "./components/Navbar";
 
 interface MovieSet {
   id: Date;
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <h1>Movie List</h1>
       <MovieForm addMovie={addMovie} />
       {renderMovies}

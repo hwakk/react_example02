@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Movie from "./Movie";
-import MovieForm from "./MovieForm";
+import Movie from "../components/Movie";
+import MovieForm from "../components/MovieForm";
 
 interface MovieSet {
   id: Date;

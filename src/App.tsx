@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Movies from "./components/Movies";
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import Users from "./pages/Users";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/movies" element={<Movies />}></Route>
-          <Route path="/users"></Route>
+          <Route path="/users" element={<Users />}></Route>
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </div>
